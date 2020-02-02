@@ -13,6 +13,7 @@ class NamecheapApi {
 	
 	// object definition
 	public $domains;
+	public $domainsDns;
 	
     public function __construct($ApiUser,$ApiKey,$UserName,$ClientIp){
         
@@ -23,6 +24,7 @@ class NamecheapApi {
 		
 		// object initialization
 		$this->domains = new Domains($this->ApiUser,$this->ApiKey,$this->UserName,$this->ClientIp);
+		$this->domainsDns = new DomainsDns($this->ApiUser,$this->ApiKey,$this->UserName,$this->ClientIp);
 		
     }
 
