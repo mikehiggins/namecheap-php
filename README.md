@@ -10,20 +10,6 @@
 
 Namecheap PHP is a Package that use the Namecheap API. All functions at this time are implemted and can be used.
 
-## Structure
-
-If any of the following are applicable to your project, then the directory structure should follow industry best practices by being named the following.
-
-```
-bin/        
-build/
-docs/
-config/
-src/
-tests/
-vendor/
-```
-
 
 ## Install
 
