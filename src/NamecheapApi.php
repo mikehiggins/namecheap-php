@@ -44,6 +44,8 @@ class NamecheapApi {
 		} else {
 			$this->RequestUrl = "https://api.namecheap.com/xml.response?";
 		}
+		// object reinitialize
+		$this->initializeObjects();
 	}
 
 	private function initializeObjects(){
