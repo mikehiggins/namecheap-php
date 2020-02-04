@@ -10,13 +10,15 @@ class DomainsDns {
 	protected $ApiKey;
 	protected $UserName;
 	protected $ClientIp;
+	protected $RequestUrl;
 	
-	public function __construct($ApiUser,$ApiKey,$UserName,$ClientIp){
+	public function __construct($ApiUser,$ApiKey,$UserName,$ClientIp,$RequestUrl){
         
 		$this->ApiUser = $ApiUser;
 		$this->ApiKey = $ApiKey;
 		$this->UserName = $UserName;
 		$this->ClientIp = $ClientIp;
+		$this->RequestUrl = $RequestUrl;
 		
     }
 	
@@ -87,7 +89,7 @@ class DomainsDns {
 	// internal functions
 	private function buildUrl($command,$additionalParams = array()){
 		
-		$url = "https://api.sandbox.namecheap.com/xml.response?";
+		$url = $this->RequestUrl;
 		
 		// build query
 		$params = array("ApiUser" => $this->ApiUser,"ApiKey" => $this->ApiKey,"UserName" => $this->UserName,"Command" => $command,"ClientIp" => $this->ClientIp);

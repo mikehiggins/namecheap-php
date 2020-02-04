@@ -25,6 +25,14 @@ $namecheap = new NamecheapApi("NamecheapUser","NamecheapApiKey","NamecheapUser",
 $result = $namecheap->DomainsDns->getEmailForwarding("google.com");
 ```
 
+# Sandbox Mode
+``` php
+use Wirecore\Namecheap\NamecheapApi;
+
+$namecheap = new NamecheapApi("NamecheapUser","NamecheapApiKey","NamecheapUser","UserIp");
+$namecheap->setSandboxMode(true);
+```
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
