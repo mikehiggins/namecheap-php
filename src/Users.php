@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Wirecore\Namecheap;
+namespace Mikehiggins\Namecheap;
 
 class Users {
     
