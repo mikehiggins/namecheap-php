@@ -24,9 +24,9 @@ class Domains {
 	
 	// namecheap functions
 	// getList
-	public function getList(){
+	public function getList($additionalParams = array()){
 		
-		$url = $this->buildUrl("namecheap.domains.getList");
+		$url = $this->buildUrl("namecheap.domains.getList", $additionalParams);
 		$result = $this->run($url);
 		return $result;
 		

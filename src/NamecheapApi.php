@@ -22,7 +22,7 @@ class NamecheapApi {
 	public $Whoisguard;
 	
 	private $RequestUrl;
-	
+
     public function __construct($ApiUser,$ApiKey,$UserName,$ClientIp){
         
 		$this->ApiUser = $ApiUser;
